@@ -1,0 +1,64 @@
+# Hashtime
+
+Hashtime is a general purpose format for blocks over arbitrary
+events. All blocks contain hash function based proof of work. Every event has a
+set of blocks that point back to the event. The total amount of work on top of an event
+can be seen as the age of that event, and the total set of blocks constitute a
+"time" system implemented with hash functions.
+
+The name "hash time" denotes that time, in a certain sense, is implemented
+using hash functions. The connection between hash time and physical time is
+discussed in LINK.
+
+## Relationship to crypto coins and block chains
+
+Hashtime is clearly related to, and inspired by, crypto coins and block chains.
+Hashtime was developed as a result of attempting to answer the question of
+whether crypto coins, such as bitcoin, have "intrinsic" value.
+
+Like crypto coins, hashtime has blocks, miners, proof of work, and an
+economic incentive for miners to compute hash functions. Furthermore, blocks
+have "intrinsic" economic values
+
+However, hashtime does not have a single block chain and is not a coin, unless
+the concept of coin is stretched so much that almost anything is a coin.
+
+The economics of both hashtime and crypto coins is discussed in LINK.
+
+## The blocks
+
+The hashtime system consists of blocks. The blocks are as general as possible
+and very few decisions or assumptions are hard coded into the block format.
+
+The purpose of a block is to prove hash work, to reference previous blocks, 
+and to reference events, and possibly to refer to the initial "owner" of the
+block.
+
+A block is built of these pieces:
+
+
+
+
+
+A block consists 
+
+The
+purpose of a block is to prove that work has been performed on behalf of a
+number of older blocks and new events. Similar to bitcoin, the work is a
+computation of a hash function over the content of the block including a nonce.
+The work is proven by including a hash value in the block and the amount of
+work is given by the difficulty of the hash, e.g. the number of leading zeros
+in the hash value.
+
+similar to
+bitcoin. A nonce
+is included in the block together and the amount of work is 
+
+The work is
+proven by 
+
+
+
+A system for timing events using hash functions. 
+
+
