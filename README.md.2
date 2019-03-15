@@ -10,9 +10,23 @@ The name "hash time" denotes that time, in a certain sense, is implemented
 using hash functions. The connection between hash time and physical time is
 discussed in LINK.
 
+### Figure of blocks
+
+Caption: Blocks are created and transferred among market participants. A block
+contains hash function proof of work, pointers to older blocks, and events. 
+Blocks are passive envelopes for events. Events are of arbitrary types and
+must be interpreted by applications. The purpose of blocks is to prove hash
+function work. The set of blocks constitute a directed acyclic graph.
+Blocks can use different hash functions but still point to each other.
+The amount of work performed on top of an event is the age of that event in
+the hashtime system. Creators of events will attempt to get their events into
+the hashtime network by either performing work themselves or paying others to
+work on their behalf.
+
+
 ## Relationship to crypto coins and block chains
 
-Hashtime is clearly related to, and inspired by, crypto coins and block chains.
+Hashtime is clearly related to, and very inspired by, crypto coins and block chains.
 Hashtime was developed as a result of attempting to answer the question of
 whether crypto coins, such as bitcoin, have "intrinsic" value.
 
@@ -36,6 +50,12 @@ block.
 
 A block is built of these pieces:
 
+1. A code specifying the hash function, e.g. SHA-2 or SHA-3.
+2. The hash value of the remaining part of the block. Small values represent
+more work.
+3. A nonce. The creator of a block will try multiple nonces to minimize the
+hash value.
+4. A 
 
 
 
